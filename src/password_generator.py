@@ -46,6 +46,9 @@ def contains_1_special_caracter(sentence):
 
 
 def check_sentence(sentence):
+    """
+    Checking if the sentense respect the five rules.
+    """
     defects = {'12 words':False,
                 '1 capital letter':False,
                 '1 lowercase letter':False,
@@ -106,5 +109,5 @@ def password_generator(sentence):
 
     return password
 
-test = sentence_password_generator('elliott Joliman claude dominique $tanley 19 10 2000 guadeloupe marie galante grand bourg')
+test = password_generator('marc-emanuel ce petit PELO qui habite a 1 rue de l efrei sa darone')
 print('Your password is :\n\n   - ' + test + '\n\n')
