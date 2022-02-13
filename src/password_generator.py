@@ -1,8 +1,10 @@
-import pandas as pd
 import re
 
 
 def contains_1_number(sentence):
+    """
+    Checking if the sentense contains at least one number.
+    """
     pattern = ".*[0-9].*"
     if re.search(pattern, sentence):
         return True
@@ -11,6 +13,9 @@ def contains_1_number(sentence):
 
 
 def contains_1_capital_letter(sentence):
+    """
+    Checking if the sentense contains at least one capital letter.
+    """
     pattern = '.*[A-Z].*'
     if re.search(pattern, sentence):
         return True
@@ -19,6 +24,9 @@ def contains_1_capital_letter(sentence):
 
 
 def contains_1_lowercase_letter(sentence):
+    """
+    Checking if the sentense contains at least one lowercase letter.
+    """    
     pattern = '.*[a-z].*'
     if re.search(pattern, sentence):
         return True
@@ -27,6 +35,9 @@ def contains_1_lowercase_letter(sentence):
 
 
 def contains_1_special_caracter(sentence):
+    """
+    Checking if the sentense contains at least one a special character.
+    """
     pattern = ".*[!”#$%&’()*+,-./:;<=>?@[\\]^_`{|}~].*"
     if re.search(pattern, sentence):
         return True
@@ -64,7 +75,7 @@ def check_sentence(sentence):
         return False,defects
 
 
-def sentence_password_generator(sentence):
+def password_generator(sentence):
 
     """
     This function generate a password with a sentence gives in parameter
