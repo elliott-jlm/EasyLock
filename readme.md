@@ -10,7 +10,7 @@ generated from this sentence.
 The sentence choosen by the user must have at least :
 
       - 12 words.
-      - 1 capital letter.
+      - 1 capital letter at the start of a word.
       - 1 lowercase letter.
       - 1 number.
       - 1 special character in this list : !”#$%&’()*+,-./:;<=>?@[\]^_`{|}~
